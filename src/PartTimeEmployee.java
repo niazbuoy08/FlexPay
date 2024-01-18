@@ -1,6 +1,6 @@
 public class PartTimeEmployee implements Employee {
 
-    private double hoursWorked; // Change int to double
+    private double hoursWorked;
     private double hourlyRate;
 
     public PartTimeEmployee(double hoursWorked, double hourlyRate) {
@@ -20,8 +20,13 @@ public class PartTimeEmployee implements Employee {
 
     @Override
     public double calculateBonus() {
-        // Part-time employees might not have a bonus, so returning 0.
-        return 0;
+        return 0; // Part-time employees might not have a bonus, so returning 0.
+    }
+
+    @Override
+    public int getEmployeeId() {
+        // Provide an implementation to return the employee's ID for PartTimeEmployee
+        // You can return a constant, retrieve it from a field, database, etc.
+        return 0; // Replace with the actual implementation
     }
 }
-
