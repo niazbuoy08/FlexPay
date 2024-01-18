@@ -1,0 +1,24 @@
+Salary Slip for Employee: FullTimeEmployee
+Employee ID: 1
+Base Salary: 40000.0
+Bonus: 2000.0
+Total Salary: 42000.0
+------------------------------
+Salary Slip for Employee: FullTimeEmployee
+Employee ID: 2
+Base Salary: 50000.0
+Bonus: 3500.0000000000005
+Total Salary: 53500.0
+------------------------------
+Salary Slip for Employee: Manager
+Employee ID: 1
+Base Salary: 100000.0
+Bonus: 40000.0
+Total Salary: 140000.0
+------------------------------
+Salary Slip for Employee: PartTimeEmployee
+Employee ID: 0
+Base Salary: 800.0
+Bonus: 0.0
+Total Salary: 800.0
+------------------------------
