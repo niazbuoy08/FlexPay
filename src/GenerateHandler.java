@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
-public class ReportGenerator {
+public class GenerateHandler {
     public static void generateSalarySlip(Employee employee, String outputFile) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(outputFile, true))) {
             writer.println("Salary Slip for Employee: " + employee.getClass().getSimpleName());
