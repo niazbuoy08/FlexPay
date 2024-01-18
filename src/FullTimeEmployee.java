@@ -20,6 +20,6 @@ public class FullTimeEmployee implements Employee{
 
     @Override
     public double calculateBonus() {
-        return monthlySalary * bonusPercentage;
+        return monthlySalary * (bonusPercentage/100);
     }
 }

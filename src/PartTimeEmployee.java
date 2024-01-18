@@ -1,9 +1,9 @@
-public class PartTimeEmployee implements Employee{
+public class PartTimeEmployee implements Employee {
 
-    private int hoursWorked;
+    private double hoursWorked; // Change int to double
     private double hourlyRate;
 
-    public PartTimeEmployee(int hoursWorked, double hourlyRate) {
+    public PartTimeEmployee(double hoursWorked, double hourlyRate) {
         this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
     }
@@ -23,5 +23,5 @@ public class PartTimeEmployee implements Employee{
         // Part-time employees might not have a bonus, so returning 0.
         return 0;
     }
-
 }
+
