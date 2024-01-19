@@ -3,4 +3,5 @@ public interface Employee {
     double calculateBaseSalary();
     double calculateBonus();
     int getEmployeeId();
+
 }

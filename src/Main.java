@@ -71,19 +71,21 @@ public class Main {
 
         System.out.println("Total Salary for " + monthName + ": Tk " + String.valueOf(totalSalary));
 
+        TaxCalculator managerTaxCalculator = new ManagerTaxCalculator();
+        GenerateHandler generateHandler = new GenerateHandler(managerTaxCalculator);
+
+
         for (FullTimeEmployee fullTimeEmployee : fullTimeEmployees) {
-            GenerateHandler.generateSalarySlip(fullTimeEmployee, monthName + "_salary_slip.txt");
-            GenerateHandler.generateTaxSummary(fullTimeEmployee, monthName + "_tax_summary.txt");
-            GenerateHandler.generatePerformanceReport(fullTimeEmployee, monthName + "_performance_report.txt");
+            generateHandler.generateSalarySlip(fullTimeEmployee, monthName + "_salary_slip.txt");
+            generateHandler.generateTaxSummary(fullTimeEmployee, monthName + "_tax_summary.txt");
         }
 
-        GenerateHandler.generateSalarySlip(managerEmployee, monthName + "_salary_slip.txt");
-        GenerateHandler.generateTaxSummary(managerEmployee, monthName + "_tax_summary.txt");
-        GenerateHandler.generatePerformanceReport(managerEmployee, monthName + "_performance_report.txt");
+        generateHandler.generateSalarySlip(managerEmployee, monthName + "_salary_slip.txt");
+        generateHandler.generateTaxSummary(managerEmployee, monthName + "_tax_summary.txt");
 
-        GenerateHandler.generateSalarySlip(partTimeEmployee, monthName + "_salary_slip.txt");
-        GenerateHandler.generateTaxSummary(partTimeEmployee, monthName + "_tax_summary.txt");
-        GenerateHandler.generatePerformanceReport(partTimeEmployee, monthName + "_performance_report.txt");
+        generateHandler.generateSalarySlip(partTimeEmployee, monthName + "_salary_slip.txt");
+        generateHandler.generateTaxSummary(partTimeEmployee, monthName + "_tax_summary.txt");
+
 
         scanner.close();
     }

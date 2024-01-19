@@ -1,0 +1,20 @@
+Tax Summary for Employee: FullTimeEmployee
+Employee ID: 1
+Tax: 6300.0
+------------------------------
+Tax Summary for Employee: FullTimeEmployee
+Employee ID: 2
+Tax: 7490.0
+------------------------------
+Tax Summary for Employee: FullTimeEmployee
+Employee ID: 3
+Tax: 8720.0
+------------------------------
+Tax Summary for Employee: Manager
+Employee ID: 1
+Tax: 10000.0
+------------------------------
+Tax Summary for Employee: PartTimeEmployee
+Employee ID: 0
+Tax: 100.0
+------------------------------
